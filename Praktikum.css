@@ -1,0 +1,157 @@
+/* Style umum untuk body */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Biru pastel */
+  color: #333;
+}
+
+/* Style untuk elemen main */
+main {
+  max-width: 800px; /* Mengatur lebar maksimum agar tidak terlalu lebar */
+  margin: 30px auto; /* Sentralisasi dengan auto margin */
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  transition: transform 0.3s ease-in-out;
+}
+
+main:hover {
+  transform: translateY(-10px); /* Sedikit mengangkat section saat di-hover */
+}
+
+/* Style untuk section dalam main */
+main section {
+  margin-bottom: 25px;
+}
+
+/* Style untuk heading */
+h1,
+h2 {
+  color: #2b3a42;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em; /* Ukuran lebih kecil agar lebih sesuai untuk lebar sempit */
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #e76f51; /* Orange coral untuk h2 */
+}
+
+/* Style untuk paragraf */
+p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  text-align: justify;
+}
+
+/* Style untuk teks italic */
+em {
+  color: #2a9d8f; /* Hijau aquamarine */
+}
+
+/* Style untuk list (ul dan li) */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  color: #264653; /* Warna teks biru tua */
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+/* Style untuk strong tag */
+strong {
+  color: #e76f51; /* Orange coral */
+}
+
+/* Style untuk aside */
+aside {
+  max-width: 800px; /* Menyelaraskan lebar aside dengan main */
+  background-color: #264653; /* Biru tua */
+  color: white;
+  padding: 25px;
+  margin: 30px auto; /* Sentralisasi */
+  border-radius: 12px;
+}
+
+aside h2 {
+  color: #e9c46a; /* Warna emas */
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+aside ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside a {
+  color: #e9c46a; /* Emas */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+aside a:hover {
+  color: #f4a261; /* Orange muda */
+  text-decoration: underline;
+}
+
+/* Style untuk footer */
+footer {
+  max-width: 800px; /* Menyelaraskan lebar footer dengan main */
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  font-size: 0.9em;
+  margin: 30px auto;
+}
+
+/* Hover efek untuk footer */
+footer p:hover {
+  color: #e9c46a; /* Mengubah warna menjadi emas saat di-hover */
+}
+
+/* Media queries untuk responsif */
+@media (max-width: 768px) {
+  main,
+  aside,
+  footer {
+    max-width: 90%; /* Mengatur lebar agar tetap responsif pada layar kecil */
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
